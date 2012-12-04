@@ -1,0 +1,29 @@
+Name:     hakyll-snippets
+Version:  0.0.0.1
+Synopsis: Include code snippets from another project
+Description:
+  Include code snippets from another project
+
+License:       BSD3
+License-file:  LICENSE
+Author:        Jasper Van der Jeugt <m@jaspervdj.be>
+Maintainer:    Jasper Van der Jeugt <m@jaspervdj.be>
+Copyright:     2012 Jasper Van der Jeugt
+Category:      Language
+Build-type:    Simple
+Cabal-version: >= 1.8
+
+Library
+  Ghc-options:    -Wall
+  Hs-source-dirs: src
+
+  Exposed-modules:
+    Hakyll.Snippets
+    Hakyll.Snippets.Haskell
+
+  Build-depends:
+    base             >= 4    && < 5,
+    containers       >= 0.4  && < 0.6,
+    hakyll           >= 4.0  && < 4.1,
+    haskell-src-exts >= 1.13 && < 1.14,
+    mtl              >= 2.1  && < 2.2
